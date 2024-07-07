@@ -258,4 +258,24 @@ public class RadioTest {
         int actual4 = radio4.getCurrentVolume();
         Assertions.assertEquals(expected4, actual4);
     }
+
+    @Test
+    public void RadioTest() {
+        Radio radio = new Radio(20);
+        radio.setCurrentStation(15);
+
+        int expected = 15;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected,actual);
+    }
+//    @Test
+//    public void VolumeTest() {
+//        Radio radio = new Radio();
+//        radio.setCurrentVolume(101);
+//
+//        int expected = 100;
+//        int actual = radio.getCurrentVolume();
+//        Assertions.assertEquals(expected,actual);
+//    }
+
 }
